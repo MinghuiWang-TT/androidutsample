@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+    <LinearLayout
+            android:id="@+id/op1_container"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/op1_tittle"
+                android:layout_height="wrap_content"/>
+
+        <EditText
+                android:id="@+id/operator1"
+                android:inputType="number"
+                android:layout_marginStart="20dp"
+                android:layout_width="match_parent"
+                android:hint="@string/op1_hint"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/op2_container"
+            android:layout_below="@id/op1_container"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView android:layout_width="wrap_content"
+                  android:text="@string/op2_tittle"
+                  android:layout_height="wrap_content"/>
+
+        <EditText
+                android:id="@+id/operator2"
+                android:inputType="number"
+                android:layout_marginStart="20dp"
+                android:layout_width="match_parent"
+                android:hint="@string/op2_hint"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <TextView
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_below="@id/op2_container"
+            android:visibility="gone"
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <Button
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="100dp"
+            android:text="@string/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add"/>
+    <Button
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="100dp"
+            android:text="@string/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clear"/>
+</RelativeLayout>
